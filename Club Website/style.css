@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+/*header*/
+header{
+    width: 100%;
+    height: 10rem;
+    background-color: lightblue;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-size: 4rem;
+    padding-left: 2rem;
+}
+
+header nav{
+    padding-right: 2rem;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav li{
+    list-style: none;
+    padding: 1rem;
+}
+
+header nav a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover{
+    color: blue;
+}
+
+/*showcase*/
+.showcase{
+    height: 75rem;
+    width: 100%;
+    background-image: url('images/istockphoto-1373008170-170667a.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+@media only screen and (max-width: 630px){
+    .showcase{
+        height: 50rem;
+    }
+}
+
+/*meetup*/
+.meetup{
+    height: 60rem;
+    width: 100%;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.meetup h2{
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+.meetup p{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.image-container{
+    max-width: 100%;
+    display: block;
+    margin: 2rem auto;
+}
+
+.image-container img{
+    width: 30%;
+    margin: 1.5%;
+}
+
+@media only screen and (max-width: 1048px){
+    .image-container img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .meetup{
+        height: 240rem;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    .meetup{
+        height: 170rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .meetup{
+        height: 140rem;
+    }
+}
+/*quote*/
+.quote{
+    height: 20rem;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+}
+
+.quote h2{
+    font-size: 5rem;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+.quote h3{
+    font-size: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+}
+
+@media only screen and (max-width: 1048px){
+    .quote{
+        height: 30rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .quote h2{
+        font-size: 3.5rem;
+    }
+
+    .quote h3{
+        font-size: 1.5rem;
+    }
+}
+
+footer{
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+}
+
+footer p{
+    font-size: 2rem;
+    padding: 2rem;
+}
